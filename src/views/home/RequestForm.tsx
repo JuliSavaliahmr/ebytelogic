@@ -1,11 +1,11 @@
 import React from "react";
 
-import Buttons from "@/src/components/Buttons";
+import Button from "@/src/components/Button";
 
 const RequestForm = () => {
     return (
         <section className="bg-secondary text-white py-16 sm:py-28">
-            <div className="max-w-[1170px] mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+            <div className="max-w-[1400px] mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
                 <div className="lg:col-span-2">
                     <h2 className="text-2xl sm:text-[34px] font-medium mb-4">
                         Request a <span className="text-primary">Call back</span>
@@ -39,10 +39,10 @@ const RequestForm = () => {
                             rows={4}
                             className="py-3 px-4 rounded bg-transparent outline-none outline-0 border border-[#3178fb66] text-white placeholder:text-sm placeholder:text-[#8899aa] focus:outline-none"
                         />
-                        <Buttons variant="default" className="font-semibold"
+                        <Button variant="default" className="font-semibold"
                         >
                             SUBMIT
-                        </Buttons>
+                        </Button>
                     </div>
                 </form>
             </div>

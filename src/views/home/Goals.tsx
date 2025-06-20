@@ -13,7 +13,7 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import Buttons from '@/src/components/Buttons';
+import Button from '@/src/components/Button';
 
 import IndustryJpg from '@/src/assets/images/home/industry.jpg';
 import TechnicalJpg from '@/src/assets/images/home/technical.jpg';
@@ -22,21 +22,21 @@ import SolarJpg from '@/src/assets/images/home/solar.jpg';
 const CardData = [
     {
         preview: IndustryJpg,
-        title: 'Industry support',
+        title: 'Domain-Aligned Engineering',
         description:
-            'Our development opt in to the projects they genuinely want to work on, committing wholeheartedly to delivering.',
+            'We understand your industry – from low-latency streaming and signal processing to BSP development for custom hardware. Every project starts with aligned context and ends in optimized delivery.',
     },
     {
         preview: TechnicalJpg,
-        title: 'Technical energy',
+        title: 'Real-Time, Reliable, Ready',
         description:
-            'Our developers strive for excellent delivery by being actively engaged in what they do.',
+            'From GStreamer pipelines to embedded Linux tuning, we deliver systems with measurabl performance: low jitter, accurate AV sync, and stable long-hour operations – productiongrade from day one.',
     },
     {
         preview: SolarJpg,
-        title: 'Solar innovation',
+        title: 'Transparent & Agile Collaboration',
         description:
-            'Empowering future with clean energy and technical expertise.',
+            'We ramp up fast, adapt to your tools, and stay transparent through every sprint. With proactive updates and detailed handovers, we’re your extended engineering arm, not just a vendor.',
     },
     {
         preview: IndustryJpg,
@@ -79,15 +79,16 @@ const CardData = [
 const Goals = () => {
     return (
         <section>
-            <div className="max-w-[1170px] mx-auto px-4 sm:px-6 py-28 space-y-4">
+            <div className="max-w-[1400px] mx-auto px-4 sm:px-6 py-28 space-y-4">
                 <h2 className="text-2xl sm:text-[34px] font-medium text-primaryText leading-tight text-center">
-                    Our successful goal
+                    Built for Performance. Tuned for Product Success.
                 </h2>
                 <p className='text-sm sm:text-[15px] text-[#5d6471] max-w-md mx-auto text-center mb-4'>
-                    Dummy text is also used to demonstrate the appearance of different typefaces and layouts
+                    We bring engineering clarity, media-grade performance, and domain-level
+                    precision to every build.
                 </p>
                 <PhotoProvider>
-                    <div className="relative group max-w-[1170px] mx-auto pt-3">
+                    <div className="relative group max-w-[1400px] mx-auto pt-3">
                         <Swiper
                             navigation={{
                                 nextEl: '.custom-swiper-button-next',
@@ -113,7 +114,7 @@ const Goals = () => {
                         >
                             {CardData.map((card, index) => (
                                 <SwiperSlide key={index}>
-                                    <div className="sm:max-w-[360px] w-full sm:mx-auto group/card">
+                                    <div className="w-full sm:mx-auto group/card">
                                         <div className="overflow-hidden w-full relative cursor-pointer">
                                             <Image
                                                 src={card.preview.src}
@@ -132,17 +133,17 @@ const Goals = () => {
                                         </div>
                                         <div className="py-4 space-y-2">
                                             <div className="flex items-center justify-between">
-                                                <h4 className="text-xl sm:text-2xl text-[#2a354e] font-medium group-hover/card:text-primary transition-all duration-200">
+                                                <h4 className={`text-[21px] text-nowrap text-[#2a354e] font-medium group-hover/card:text-primary transition-all duration-200 ${index === 0 && "text-nowrap"}`}>
                                                     {card.title}
                                                 </h4>
-                                                <Buttons
+                                                <Button
                                                     variant="default"
                                                     className="h-8 w-12 grid place-items-center !p-0 me-8 opacity-0 group-hover/card:opacity-100 group-hover/card:me-0 transition-all duration-300"
                                                 >
                                                     <GoArrowRight className="text-xl" />
-                                                </Buttons>
+                                                </Button>
                                             </div>
-                                            <p className="text-sm sm:text-[15px] text-[#5d6471] leading-relaxed">
+                                            <p className="text-sm text-[#5d6471] leading-relaxed">
                                                 {card.description}
                                             </p>
                                         </div>

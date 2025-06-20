@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+
 import React, { useRef, useState } from 'react';
 import { FaChevronRight, FaChevronUp } from 'react-icons/fa';
 import { IoMdMail } from 'react-icons/io';
@@ -61,7 +62,7 @@ const Questions = () => {
   const [openIndex3, setOpenIndex3] = useState<number | null>(null);
 
   return (
-    <div className="max-w-[1170px] mx-auto px-4 sm:px-6">
+    <div className="max-w-[1400px] mx-auto px-4 sm:px-6">
       <div className="py-16 sm:py-28">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>

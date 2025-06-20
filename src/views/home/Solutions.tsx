@@ -4,33 +4,33 @@ import React from "react";
 
 import TeamPng from "@/src/assets/images/home/team.png";
 import ProjectPng from "@/src/assets/images/home/project-management.png";
-import AnalysisPng from "@/src/assets/images/home/financial-analysis.png";
+import AnalysisPng from "@/src/assets/images/home/product-management.png";
 
 const solutionsData = [
   {
     img: ProjectPng,
-    title: "Innovation idea",
+    title: "Embedded Engineering Edge",
     description:
-      "Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetur.",
+      "From Linux BSPs to AV pipelines, our software is engineered for real-time performance.",
   },
   {
     img: AnalysisPng,
-    title: "Market research",
+    title: "Full-Cycle Product Partner",
     description:
-      "Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetur.",
+      "We support your product journey from PoC to production with agile, expert teams.",
   },
   {
     img: TeamPng,
-    title: "Creative team",
+    title: "Best-of-Stack Expertise",
     description:
-      "Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetur.",
+      "We work across Android AOSP, Qt, GStreamer, FFMPEG & more to suit your embedded needs.",
   },
 ];
 
 const Solutions = () => {
   return (
     <section className="py-16 sm:py-28 bg-white">
-      <div className="max-w-[1170px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:py-8">
           {solutionsData.map((solution, index) => (
             <div

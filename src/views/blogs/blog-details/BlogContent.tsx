@@ -11,7 +11,7 @@ import OnlineDiscussionJpg from "@/src/assets/images/blogs/onlineDiscussion.jpg"
 const BlogContent = () => {
     return (
         <section className="py-16 sm:py-28">
-            <div className='max-w-[1170px] mx-auto px-4 sm:px-6'>
+            <div className='max-w-[1400px] mx-auto px-4 sm:px-6'>
                 <div>
                     <Image src={BlogDetailsJpg} alt='BlogDetailsJpg' className='w-[850px] mx-auto h-[478px]' />
                     <div className="flex items-center gap-1 mt-6 mb-4">

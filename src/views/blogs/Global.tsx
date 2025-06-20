@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useState } from 'react'
-
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
+import React, { useState } from 'react'
 import { FaCalendarAlt } from 'react-icons/fa';
+
+import Button from '@/src/components/Button';
 
 import CreativeDesignsJpg from '@/src/assets/images/home/creativeDesigns.jpg'
 import ConsultancyJpg from '@/src/assets/images/home/consultancy.jpg'
@@ -13,7 +14,6 @@ import BussinessJpg from '@/src/assets/images/home/bussiness.jpg'
 import SolarJpg from '@/src/assets/images/home/solar.jpg';
 import ProcurementJpg from '@/src/assets/images/home/procurement.jpg';
 import BenefitsJpg from '@/src/assets/images/home/benefits.jpg';
-import Buttons from '@/src/components/Buttons';
 
 const globalCards = [
     {
@@ -162,7 +162,7 @@ const Global = () => {
 
     return (
         <section className='py-16 sm:py-28'>
-            <div className="max-w-[1170px] mx-auto px-4 sm:px-6 space-y-4">
+            <div className="max-w-[1400px] mx-auto px-4 sm:px-6 space-y-4">
                 <h2 className="text-2xl sm:text-[34px] font-medium text-primaryText text-center leading-tight">
                     Technology news
                 </h2>
@@ -188,33 +188,33 @@ const Global = () => {
                     ))}
                 </div>
                 <div className="flex gap-2 mt-10">
-                    <Buttons
+                    <Button
                         variant='outline'
                         onClick={() => handlePageChange(currentPage - 1)}
                         disabled={currentPage === 1}
                         className={`px-4 text-secondary !h-[34px] !bg-[#F4F5F5] !border-[#F4F5F5] hover:!bg-primary hover:!border-primary hover:text-white transition duration-400 text-sm rounded `}
                     >
                         Prev
-                    </Buttons>
+                    </Button>
 
                     {Array.from({ length: totalPages }, (_, index) => (
-                        <Buttons
+                        <Button
                             key={index + 1}
                             onClick={() => handlePageChange(index + 1)}
                             className={`!py-0 !px-3 border text-sm !h-[34px] rounded ${currentPage === index + 1 ? 'bg-blue-500 text-white' : '!bg-[#F4F5F5] hover:!bg-primary !border-[#F4F5F5] hover:!border-primary !text-secondary hover:!text-white'}`}
                         >
                             {index + 1}
-                        </Buttons>
+                        </Button>
                     ))}
 
-                    <Buttons
+                    <Button
                         variant='outline'
                         onClick={() => handlePageChange(currentPage + 1)}
                         disabled={currentPage === totalPages}
                         className={`px-4 text-secondary !h-[34px] !bg-[#F4F5F5] !border-[#F4F5F5] hover:!bg-primary hover:!border-primary hover:text-white transition duration-400 text-sm rounded `}
                     >
                         Next
-                    </Buttons>
+                    </Button>
                 </div>
             </div>
         </section>

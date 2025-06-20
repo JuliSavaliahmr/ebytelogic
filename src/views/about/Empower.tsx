@@ -1,12 +1,13 @@
-import React from 'react'
 import Image from 'next/image'
 
+import React from 'react'
 import { PiCheckCircleFill, PiUserCircleDashed } from 'react-icons/pi'
 import { FaArrowRight } from 'react-icons/fa'
 
+import Button from '@/src/components/Button'
+
 import AboutGielPng from '@/src/assets/images/about/aboutGirl.png'
 import AboutVideo from '@/src/assets/images/about/about-video.png'
-import Buttons from '@/src/components/Buttons'
 
 const aboutData = [
     "Cloud Connect IT Services desi", "Cyber Shield Technologies here", "Digital Transfor Solutions our te", "IT Consulting and Support"
@@ -34,7 +35,7 @@ const aboutCards = [
 const Empower = () => {
     return (
         <section className="py-16 sm:py-28 relative">
-            <div className="max-w-[1170px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div className='space-y-4'>
                         <h6 className='text-base md:text-lg text-primary font-medium flex items-center gap-2'><PiUserCircleDashed />About Us</h6>
@@ -52,7 +53,7 @@ const Empower = () => {
                                 }
                             </ul>
                         </div>
-                        <Buttons className='mt-8 !rounded-full gap-3 flex items-center'>Read More<FaArrowRight /></Buttons>
+                        <Button className='mt-8 !rounded-full gap-3 flex items-center'>Read More<FaArrowRight /></Button>
                     </div>
                     <div>
                         <Image src={AboutGielPng} alt='AboutGielPng' width={500} height={700} className='w-auto h-auto ' />
@@ -60,7 +61,7 @@ const Empower = () => {
                 </div>
             </div>
             <div className='w-full h-32 bg-[#FFFAF0] mt-8 absolute'></div>
-            <div className="max-w-[1170px] mx-auto px-4 mt-8 sm:px-6 lg:px-8 relative z-10">
+            <div className="max-w-[1400px] mx-auto px-4 mt-8 sm:px-6 lg:px-8 relative z-10">
                 <div className='bg-white px-10 shadow-xl rounded-[20px] py-[60px] flex flex-wrap gap-3 justify-center lg:justify-between'>
                     {
                         aboutCards.map((cards, index) => (

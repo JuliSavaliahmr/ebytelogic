@@ -1,13 +1,12 @@
 'use client';
 
-import React from 'react'
 import Image from 'next/image'
 
+import React from 'react'
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import { PiUserCircleDashed } from 'react-icons/pi'
 import { LuQuote } from "react-icons/lu";
 import { FaArrowLeft, FaArrowRight, FaStar } from 'react-icons/fa';
@@ -62,7 +61,7 @@ const testimonials = [
 
 const Testimonials = () => {
     return (
-        <div className='max-w-[1170px] mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-28'>
+        <div className='max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-28'>
             <div className="flex flex-col md:flex-row justify-between">
                 <div>
                     <h6 className='text-base md:text-lg text-primary font-medium flex items-center gap-2 mb-4'><PiUserCircleDashed />Clients Testimonial</h6>
@@ -71,7 +70,7 @@ const Testimonials = () => {
                 <p className='max-w-[400px] text-[15px] text-[#5d6471] mb-5'>Working with this company has been a game-the a changer for my business. Their expertise and innovat approa a helped us achieve</p>
             </div>
             <div className="sm:relative grid place-items-center lg:place-items-start">
-                <Image src={Testimonial} alt='testimonial' className='sm:flex hidden'/>
+                <Image src={Testimonial} alt='testimonial' className='sm:flex hidden' />
                 <div className="max-w-xl mx-auto md:px-4 py-10 sm:absolute lg:top-20 lg:-right-10 xl:-right-30">
                     <div className="!bg-white rounded-2xl p-12 !h-[318px] shadow-lg">
                         <Swiper

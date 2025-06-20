@@ -47,12 +47,13 @@ const Testimonial = () => {
 
     return (
         <section className="py-16 sm:py-28">
-            <div className="max-w-[1170px] mx-auto px-4 sm:px-6 text-center space-y-3">
+            <div className="max-w-[1400px] mx-auto px-4 sm:px-6 text-center space-y-3">
                 <h2 className="text-2xl sm:text-[34px] font-medium text-primaryText leading-tight text-center">
-                    Customer say some words
+                    Trusted by Global Innovators
                 </h2>
                 <p className='text-sm sm:text-[15px] text-[#5d6471] max-w-lg mx-auto mb-4'>
-                    Help agencies to define their new business objectives and then create professional software.
+                    We’ve had the privilege of working with forward-thinking companies across media,
+                    semiconductors, IoT, aerospace, and more
                 </p>
                 <div className="relative pt-4">
                     <Swiper

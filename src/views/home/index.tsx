@@ -11,6 +11,7 @@ import Goals from './Goals'
 import Development from './Development'
 import Global from './Global'
 import Testimonial from './Testimonial'
+import Cta from './Cta'
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
         <RequestForm />
         <Development />
         <Global />
+        <Cta />
         <Testimonial />
       </div>
     </div>

@@ -4,6 +4,10 @@
       --color-primaryText: #151b2c;
   }
 
+  html {
+      scroll-behavior: smooth;
+  }
+
   body {
       font-family: "Poppins", sans-serif !important;
   }

@@ -1,14 +1,15 @@
-import React from 'react'
 import Image from 'next/image'
 
+import React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 
+import Button from '@/src/components/Button'
+
 import SubscribeImg from "@/src/assets/images/about/subscribe.png"
-import Buttons from '@/src/components/Buttons'
 
 const Subscribe = () => {
     return (
-        <section className="max-w-[1170px] mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-[#0E191E] rounded-2xl overflow-hidden flex gap-6 items-center justify-between">
                 <div className="flex-1 pl-16 text-white">
                     <h2 className="text-2xl sm:text-[34px] font-medium mb-4">
@@ -24,7 +25,7 @@ const Subscribe = () => {
                             placeholder="Enter Your Email Address"
                             className="px-4 rounded-full bg-[#1E2B34] text-white placeholder-gray-400 border border-[#3178fb66] focus:outline-none focus:ring-1 focus:ring-primary w-[300px]"
                         />
-                        <Buttons className='!rounded-full gap-3 flex items-center uppercase'>Subscribe Now<FaArrowRight /></Buttons>
+                        <Button className='!rounded-full gap-3 flex items-center uppercase'>Subscribe Now<FaArrowRight /></Button>
                     </form>
                 </div>
                 <div className="">

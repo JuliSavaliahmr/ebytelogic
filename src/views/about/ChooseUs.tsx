@@ -1,17 +1,18 @@
-import React from 'react'
 import Image from 'next/image'
 
+import React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 import { HiOutlineExclamationTriangle } from 'react-icons/hi2'
 import { PiBatteryChargingVerticalLight, PiUserCircleDashed } from 'react-icons/pi'
 
-import Buttons from '@/src/components/Buttons'
+import Button from '@/src/components/Button'
+
 import cardConnect from "@/src/assets/images/about/cardConnect.png"
 
 const ChooseUs = () => {
     return (
         <section className="py-16 sm:py-28 bg-[url('/images/chooseUs.png')] bg-no-repeat">
-            <div className="max-w-[1170px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
                 <h6 className='text-base md:text-lg text-primary font-medium flex items-center gap-2 mb-4'><PiUserCircleDashed />Why Chose Us</h6>
                 <h3 className='text-2xl sm:text-[34px] font-medium text-white leading-tight max-w-lg capitalize mb-10'>Stay ahead with <br /> cutting-edge <span className='text-primary'>Technology</span></h3>
                 <div className="flex flex-col gap-6 relative max-w-xl">
@@ -31,7 +32,7 @@ const ChooseUs = () => {
                         <p className='text-[#FFFFFFCC] text-[15px] mt-4'>IT Solution is a broad category that encompass the solutions aimed at solving problems or improving</p>
                     </div>
                 </div>
-                <Buttons className='mt-8 !rounded-full gap-3 flex items-center'>Read More<FaArrowRight /></Buttons>
+                <Button className='mt-8 !rounded-full gap-3 flex items-center'>Read More<FaArrowRight /></Button>
             </div>
         </section>
     )

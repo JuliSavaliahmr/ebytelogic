@@ -1,10 +1,14 @@
+import { useRouter } from "next/navigation";
+
 import React from "react";
-import Buttons from "@/src/components/Buttons";
+
+import Button from "@/src/components/Button";
 
 const HeroSection = () => {
+  const router = useRouter();
   return (
-     <div className='bg-[url("/images/home/hero.jpg")] bg-cover bg-center py-28 md:h-screen lg:-mt-20'>
-      <div className="max-w-[1170px] mx-auto px-4 sm:px-6 h-full flex items-center">
+    <div className='bg-[url("/images/home/hero.jpg")] bg-cover bg-center py-28 md:h-screen lg:-mt-20'>
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 h-full flex items-center">
         <div className="w-full lg:w-3/4 space-y-6">
           <p className="text-base md:text-lg text-primary font-medium">
             IT Solutions . Services Company
@@ -16,14 +20,14 @@ const HeroSection = () => {
           <p className="text-sm md:text-lg text-[#5d6471]">
             We develop effective plans to move your customers behaviour.
           </p>
-          <div className="flex space-x-4 pt-4"> 
-            <Buttons variant="default" className="max-w-[158px] w-full h-12">Our Services</Buttons>
-            <Buttons
-              variant="default" 
+          <div className="flex space-x-4 pt-4">
+            <Button variant="default" className="max-w-[158px] w-full h-12">Our Services</Button>
+            <Button onClick={() => router.push('/contact-us')}
+              variant="default"
               className="max-w-[158px] w-full h-12 !bg-white !text-primary hover:!bg-primary hover:!text-white"
             >
               Contact Us
-            </Buttons>
+            </Button>
           </div>
         </div>
       </div>

@@ -1,14 +1,15 @@
-import Buttons from '@/src/components/Buttons'
 import React from 'react'
 import { BiPhoneCall } from 'react-icons/bi'
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 import { HiOutlineLocationMarker } from 'react-icons/hi'
 import { MdMailOutline } from 'react-icons/md'
 
+import Button from '@/src/components/Button'
+
 const ContactDetails = () => {
     return (
         <section>
-            <div className='max-w-[1170px] py-28 mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-10 items-center'>
+            <div className='max-w-[1400px] py-28 mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-10 items-center'>
                 <div className="bg-white shadow-[0px_5px_20px_0px_rgba(0,0,0,0.09)] rounded p-8">
                     <form className="space-y-6">
                         <div>
@@ -53,9 +54,9 @@ const ContactDetails = () => {
                                 className="w-full mt-1 border border-gray-300 px-4 py-2 rounded placeholder:text-[#999] focus:outline-none focus:ring focus:border-[#3078fb]"
                             />
                         </div>
-                        <Buttons>
+                        <Button>
                             SUBMIT MESSAGE
-                        </Buttons>
+                        </Button>
                     </form>
                 </div>
                 <div>
@@ -100,18 +101,18 @@ const ContactDetails = () => {
                         <hr className="mb-8 mt-14 border-gray-300" />
                         <p className="font-semibold mb-6 text-primaryText">Follow Us On Social Media</p>
                         <div className="flex gap-4 text-white">
-                            <Buttons className='!rounded-full !w-11 !h-11 flex items-center justify-center !p-0'>
+                            <Button className='!rounded-full !w-11 !h-11 flex items-center justify-center !p-0'>
                                 <FaFacebookF className='!w-5 !h-5' />
-                            </Buttons>
-                            <Buttons className='!rounded-full !w-11 !h-11 flex items-center justify-center !p-0'>
+                            </Button>
+                            <Button className='!rounded-full !w-11 !h-11 flex items-center justify-center !p-0'>
                                 <FaTwitter className='!w-5 !h-5' />
-                            </Buttons>
-                            <Buttons className='!rounded-full !w-11 !h-11 flex items-center justify-center !p-0'>
+                            </Button>
+                            <Button className='!rounded-full !w-11 !h-11 flex items-center justify-center !p-0'>
                                 <FaInstagram className='!w-5 !h-5' />
-                            </Buttons>
-                            <Buttons className='!rounded-full !w-11 !h-11 flex items-center justify-center !p-0'>
+                            </Button>
+                            <Button className='!rounded-full !w-11 !h-11 flex items-center justify-center !p-0'>
                                 <FaLinkedinIn className='!w-5 !h-5' />
-                            </Buttons>
+                            </Button>
                         </div>
                     </div>
                 </div>
